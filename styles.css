@@ -1,0 +1,43 @@
+ 
+/* styles.css */
+:root{
+  --bg0:#05060a;
+  --bg1:#070914;
+  --panel: rgba(255,255,255,.06);
+  --panel2: rgba(255,255,255,.04);
+  --border: rgba(0,255,255,.22);
+
+  --text:#eaf6ff;
+  --muted: rgba(234,246,255,.72);
+
+  --c1:#00ffff;
+  --c2:#ff4dff;
+  --c3:#00ff88;
+  --warn:#ffcc00;
+
+  --shadow: 0 22px 60px rgba(0,0,0,.55);
+  --neon: 0 0 24px rgba(0,255,255,.28);
+
+  --radius: 18px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: "Rajdhani", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background: radial-gradient(1200px 600px at 20% 75%, rgba(0,255,255,.12), transparent 60%),
+              radial-gradient(1000px 520px at 78% 20%, rgba(255,77,255,.12), transparent 62%),
+              radial-gradient(900px 520px at 50% 45%, rgba(0,255,136,.10), transparent 66%),
+              linear-gradient(180deg, var(--bg1), var(--bg0));
+  overflow-x:hidden;
+}
+
+/* Ambient layers */
+.bg{
+  position:fixed; inset:0;
+  background:
+    radial-gradient(circle at 15% 80%, rgba(0,255,255,.18), transparent 50%),
+    radial-gradient(circle at 85% 25%, rgba(255,77,255,.16), transparent 52%),
+    radial-gradient(circle at 55% 45%, rgba(0,255,136,.12), transparent 55
